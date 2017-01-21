@@ -22,7 +22,7 @@ import static android.R.attr.value;
  * Created by kylu on 21.01.17.
  */
 
-public class CreateUser extends Activity implements View.OnClickListener {
+public class CreateUser extends Activity {
     public Button bTCreate;
     public EditText EtLogin;
     public EditText EtEmail;
@@ -43,25 +43,38 @@ public class CreateUser extends Activity implements View.OnClickListener {
         EtConfPass = (EditText) findViewById(R.id.confpass);
         progressDialog = new ProgressDialog(this);
 
+
+        bTCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String pass = EtPass.getText().toString();
+                String confPass = EtConfPass.getText().toString();
+
+                if(pass.equals(confPass))
+                {
+                    register();
+                }
+                else
+                {
+                    Toast.makeText(CreateUser.this,
+                            "Password doesn't match", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
     }
 
 
-    public void onClick(View view) {
-        if (view == bTCreate) {
-            if (EtPass.equals(EtConfPass)) {
-                register();
-            } else
-                Toast.makeText(CreateUser.this,
-                        "Passwords doesn't match", Toast.LENGTH_LONG).show();
-        }
-    }
+
 
 
     private void register()
     {
-        String login = EtLogin.getText().toString().trim();
-        String email = EtLogin.getText().toString().trim();
-        String pass = EtLogin.getText().toString().trim();
+        String login = EtLogin.getText().toString();
+        String email = EtEmail.getText().toString();
+        String pass = EtPass.getText().toString();
 
         if(TextUtils.isEmpty(login))
         {
