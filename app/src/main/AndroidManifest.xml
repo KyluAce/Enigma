@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".CreateKeys">
             </activity>
-        <activity android:name=".CreateUser">
+        <activity android:name=".CreateUser"
+            android:screenOrientation="portrait">
+
         </activity>
     </application>
 
