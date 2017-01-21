@@ -26,5 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:22.2.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
 }
 apply plugin: 'com.google.gms.google-services'
