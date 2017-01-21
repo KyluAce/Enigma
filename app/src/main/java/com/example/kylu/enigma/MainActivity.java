@@ -29,5 +29,14 @@ public class MainActivity extends Activity {
             }
         });
 
+
+        bCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, CreateUser.class);
+                myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
     }
 }

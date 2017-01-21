@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "203563437114",
+    "firebase_url": "https://enigma-4327e.firebaseio.com",
+    "project_id": "enigma-4327e",
+    "storage_bucket": "enigma-4327e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203563437114:android:7ce8e03343f30bf4",
+        "android_client_info": {
+          "package_name": "com.example.kylu.enigma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203563437114-t3vcki487b0f1jaad5meaij4qmqct46j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kylu.enigma",
+            "certificate_hash": "503ED27ADC7B9AB10849D9FB96E12B206DF31438"
+          }
+        },
+        {
+          "client_id": "203563437114-te4hrl5l2758pa8gr7gl3lflc7p3nt3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [{ "current_key": "" }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203563437114-te4hrl5l2758pa8gr7gl3lflc7p3nt3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

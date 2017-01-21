@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateKeys">
-            </activity>>
+            </activity>
+        <activity android:name=".CreateUser">
+        </activity>
     </application>
 
 </manifest>
