@@ -15,4 +15,3 @@ public class CreateUser extends Activity {
         setContentView(R.layout.create_user);
     }
 }
-}
