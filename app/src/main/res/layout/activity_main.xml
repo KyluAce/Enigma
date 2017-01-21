@@ -13,40 +13,39 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="login"
+        android:id="@+id/login"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pass"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:hint="password"
+        android:id="@+id/pass"
         android:layout_below="@+id/login"
-        android:layout_alignEnd="@+id/login"
-        android:layout_marginTop="67dp"
-        android:id="@+id/pass" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
 
     <Button
         android:text="sign in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pass"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:id="@+id/sign" />
+        android:id="@+id/sign"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Create account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:id="@+id/create"
         android:layout_below="@+id/sign"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:layout_marginTop="61dp"
-        android:hint="login"
-        android:id="@+id/login"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
 </RelativeLayout>
