@@ -103,6 +103,7 @@ public class CreateUser extends Activity {
                         if(task.isSuccessful())
                         {
                             //registered complete
+                            progressDialog.dismiss();
                             Toast.makeText(CreateUser.this,
                                     "Registration successful", Toast.LENGTH_LONG).show();
                             Intent myIntent = new Intent(CreateUser.this, MainActivity.class);
@@ -113,6 +114,7 @@ public class CreateUser extends Activity {
                         else
                             Toast.makeText(CreateUser.this,
                                     "Try again", Toast.LENGTH_LONG).show();
+                        progressDialog.dismiss();
 
                     }
                 });
