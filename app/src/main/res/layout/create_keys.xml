@@ -3,15 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:text="Log out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="119dp"
-        android:id="@+id/logout" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,4 +10,52 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="91dp"
         android:id="@+id/Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/publicKey"
+        android:layout_alignEnd="@+id/publicKey"
+        android:layout_marginTop="18dp"
+        android:id="@+id/privateKey"
+        android:hint="private key" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/publicKey"
+        android:hint="public key"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:layout_above="@+id/logout"
+        android:layout_alignStart="@+id/logout" />
+
+    <Button
+        android:text="Log out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:id="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="GENERATE KEYS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/generate"
+        android:layout_above="@+id/save"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
